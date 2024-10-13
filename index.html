@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Calcular Total</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Monto a Cancelar</h1>
+    <div id="error_container">
+      <p class="error_message"></p>
+      <ul class="error_list" id="error_list"></ul>
+    </div>
+    <div class="form_container">
+      <form id="form">
+        <div class="input_container">
+          <label for="products">Producto:</label>
+          <select name="product" id="products" class="input select">
+            <option value="soda">Soda</option>
+            <option value="churro">Churro</option>
+            <option value="galleta">Galleta</option>
+          </select>
+        </div>
+        <div class="input_container">
+          <label for="price">Precio Unitario:</label>
+          <input type="number" name="price" id="price" step="0.01" class="input">
+        </div>
+        <div class="input_container">
+          <label for="quantity">Cantidad:</label>
+          <input type="number" name="quantity" id="quantity" class="input">
+        </div>
+        <input type="submit" value="Calcular" id="cal_button">
+      </form>
+    </div>
+
+    <div class="result_container">
+      <p>El precio Total es: <span id="result"></span></p>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
